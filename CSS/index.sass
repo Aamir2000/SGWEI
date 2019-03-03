@@ -8,7 +8,7 @@
     text-align: center
     overflow: auto
     line-height: 50px
-    font-size: 20px
+    font-size: 12px
     i
         font-size: 20px    
 .nav_15
@@ -19,6 +19,8 @@
     height: 109px
     padding: 10px
     z-index: 1
+    border-bottom: 1px solid white
+    
     .top_nav_space
         height: 100px
         border-bottom: 1px solid
@@ -55,7 +57,7 @@
 .Top_Banner
     background-image: url("https://photo-cdn.icons8.com/assets/previews/767/bd7e4b40-f564-4ded-89b9-f6cb75be56481x.jpg")
     height: 350px
-    background-size: cover
+    background-size: cover 350px
     background-position-y: -100px
     .overlay
         width: 100%
@@ -64,16 +66,67 @@
         display: flex
         flex-direction: column
         text-align: center
+        justify-content: center
+        border-bottom: 1px solid white
         h2
             color: white
-            text-transform: uppercase
-            font-weight: 100
-            font-size: 25px
+            font-size: 30px
+            margin-bottom: 10px
             font-family: 'Fredericka the Great', cursive
-            text-align: center
-            flex: 1
-            
+            font-weight: 100
         p
-            flex: 1
             color: white
+            font-size: 20px
                 
+.MiddleBanner
+    height: 300px
+    display: flex
+    flex-direction: column
+    .top_middle
+        width: 100%
+        text-align: center
+        img
+            width: 100px
+            margin-top: 0px
+            display: inline
+            margin-bottom: 20px
+            
+        span
+            margin-top: 15px
+            margin-bottom: 10px
+            display: block
+    .middle_middle
+        width: 100%
+        position: relative
+        overflow: hidden
+        height: 100%
+        img
+            width: 100%
+            position: absolute
+            transition: 5s
+        .btn_left
+            color: white
+            position: absolute
+            z-index: 1
+            width: 15%
+            height: 100%
+            text-align: center
+            padding: 80px auto
+            display: inline-flex
+            flex-direction: column
+            justify-content: center
+        .btn_right
+            color: white
+            position: absolute
+            right: 0px
+            z-index: 1
+            width: 15%
+            height: 100%
+            text-align: center
+            padding: 80px auto
+            display: inline-flex
+            flex-direction: column
+            justify-content: center
+        
+body
+    height: 900px

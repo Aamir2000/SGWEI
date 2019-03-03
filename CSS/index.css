@@ -11,7 +11,7 @@
   text-align: center;
   overflow: auto;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .contact_banner_tp i {
@@ -28,6 +28,7 @@
   height: 109px;
   padding: 10px;
   z-index: 1;
+  border-bottom: 1px solid white;
 }
 
 .nav_15 .top_nav_space {
@@ -82,7 +83,7 @@
 .Top_Banner {
   background-image: url("https://photo-cdn.icons8.com/assets/previews/767/bd7e4b40-f564-4ded-89b9-f6cb75be56481x.jpg");
   height: 350px;
-  background-size: cover;
+  background-size: cover 350px;
   background-position-y: -100px;
 }
 
@@ -98,24 +99,110 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid white;
 }
 
 .Top_Banner .overlay h2 {
   color: white;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 10px;
   font-family: 'Fredericka the Great', cursive;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  font-weight: 100;
 }
 
 .Top_Banner .overlay p {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   color: white;
+  font-size: 20px;
+}
+
+.MiddleBanner {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MiddleBanner .top_middle {
+  width: 100%;
+  text-align: center;
+}
+
+.MiddleBanner .top_middle img {
+  width: 100px;
+  margin-top: 0px;
+  display: inline;
+  margin-bottom: 20px;
+}
+
+.MiddleBanner .top_middle span {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.MiddleBanner .middle_middle {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.MiddleBanner .middle_middle img {
+  width: 100%;
+  position: absolute;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.MiddleBanner .middle_middle .btn_left {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  padding: 80px auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MiddleBanner .middle_middle .btn_right {
+  color: white;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  padding: 80px auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  height: 900px;
 }
 /*# sourceMappingURL=index.css.map */
