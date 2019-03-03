@@ -41,3 +41,9 @@ left_btn.addEventListener("click", () => {
     Prev();
 });
 
+setInterval(() => {
+    if (current == images.length-1) {
+        current = -1;
+    }
+    Next();
+}, 3000);
