@@ -47,3 +47,19 @@ setInterval(() => {
     }
     Next();
 }, 3000);
+
+
+
+
+
+$(".fa-bars").on("click", e => { 
+    $(".nav_15").toggleClass("Grow");
+    $(".fa-bars").toggleClass("Mobile_SC")
+});
+$(".list").on("click", e => { 
+    $(e.target).toggleClass("Zoom");
+
+    setTimeout(() => {
+        $(e.target).toggleClass("Zoom");
+    },4000);
+});

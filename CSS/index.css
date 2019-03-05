@@ -29,14 +29,41 @@
   padding: 10px;
   z-index: 1;
   border-bottom: 1px solid white;
+  -webkit-transition: 8s;
+  transition: 8s;
 }
 
 .nav_15 .top_nav_space {
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid;
 }
 
+.nav_15 .top_nav_space .fa-bars {
+  color: white;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.nav_15 .top_nav_space i {
+  font-size: 30px;
+  display: inline-block;
+  max-width: 20px;
+  margin-top: -10px;
+  padding-right: 25px;
+}
+
 .nav_15 .top_nav_space h2 {
+  margin-top: -10px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -44,7 +71,6 @@
   font-size: 40px;
   letter-spacing: 10px;
   font-family: 'Fredericka the Great', cursive;
-  line-height: 90px;
 }
 
 .nav_15 ul {
@@ -60,24 +86,15 @@
 }
 
 .nav_15 ul li {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   list-style: none;
   display: block;
   text-align: center;
   padding: 10px 10px;
   font-size: 20px;
   color: white;
-}
-
-.nav_15 ul .sub_menu_home {
-  padding: 0px;
-}
-
-.nav_15 ul .sub_menu_home .sub_list {
-  display: none;
-  padding: 3px;
-  font-size: 20px;
-  border-bottom: 2px solid;
-  width: 85vw;
 }
 
 .Top_Banner {
@@ -119,7 +136,7 @@
 }
 
 .MiddleBanner {
-  height: 300px;
+  height: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +168,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .MiddleBanner .middle_middle img {
@@ -202,7 +220,128 @@
           justify-content: center;
 }
 
-body {
-  height: 900px;
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Middle_Bottom {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Middle_Bottom .Head {
+  font-size: 22px;
+  font-family: "Roboto",cursive;
+  text-align: center;
+}
+
+.Middle_Bottom .content {
+  padding: 10px 20px;
+  text-align: justify;
+  font-family: "Roboto",cursive;
+  font-size: 16px;
+}
+
+.Middle_Bottom .content img {
+  width: 100px;
+  margin: 3px 10px;
+}
+
+.Middle_Bottom hr {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.Middle_Bottom .ABOUT_SGW {
+  display: block;
+  position: relative;
+}
+
+.Middle_Bottom .ABOUT_SGW img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 10px auto;
+}
+
+.Bottom_Banner {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid;
+}
+
+.Bottom_Banner .Bar_Wrapper {
+  height: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Bottom_Banner .Bar_Wrapper img {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Bottom_Banner .Bar_Wrapper div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Grow {
+  height: 580px;
+  -webkit-transition: 8s;
+  transition: 8s;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.Zoom {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 20px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-top: 5px;
+}
+
+.Mobile_SC {
+  color: black !important;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 /*# sourceMappingURL=index.css.map */
