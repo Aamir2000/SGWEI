@@ -1,7 +1,14 @@
 $(".mobile_bar").on("click",(e)=>{
   $(".Menu").toggle("slow");
 });
-
+$(window).on("resize",(e)=>{
+  if(window.innerWidth >= 801){
+    $(".Menu").show();
+  }
+  else{
+    $(".Menu").hide();
+  }
+});
 let Images =
 [
 "./Images/0.jpg",
@@ -33,5 +40,6 @@ function Prev(){
       count = Images.length;
     }
 }
+setInterval(Next,5000);
 $(".Next").on("click",Next);
 $(".Previous").on("click",Prev);
