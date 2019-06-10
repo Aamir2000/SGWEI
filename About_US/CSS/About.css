@@ -1,0 +1,55 @@
+@import url("./Mobile_801_1440.css") screen and (min-width: 801px);
+@import url("./Mobile_800_1440.css") screen and (max-width: 800px);
+@font-face {
+  font-family: "Future";
+  src:url(../../Hansief.otf);
+}
+@font-face {
+  font-family: "Potra";
+  src: url(../../Potra.ttf);
+}
+@font-face {
+  font-family: "Content";
+  src: url(../../AftaSerifThin-Regular.otf);
+}
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  height: fit-content;
+  width: fit-content;
+  overflow-x: hidden;
+}
+a, a:hover, a:visited{
+  color: white;
+  text-decoration: none;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+Animation Or Hover Styling
+*/
+
+.fa-facebook:hover,.fa-facebook:active{
+  color: blue;
+  border-bottom-color: blue;
+}
+.fa-instagram:hover, .fa-instagram:active{
+  color: pink;
+  border-bottom-color: pink;
+}
+.fa-twitter:hover, .fa-twitter:active{
+  color: lightblue;
+  border-bottom-color: lightblue;
+}

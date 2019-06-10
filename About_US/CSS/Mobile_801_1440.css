@@ -43,96 +43,22 @@
   font-size: 30px;
   text-shadow: 5px 5px 6px grey;
 }
-.banner_top{
-  background-image: url("../Images/Background_Top.jpg");
-  height: 450px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
 .overlay{
   background-color: rgba(0,0,0,.7);
   height: 100%;
   position: relative;
 }
-.overlay .top_band{
-  text-align: center;
-  color: white;
-  font-family: "Potra";
-  font-size: 100px;
-  position:absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-30%);
-}
-.overlay h4{
-  text-align: center;
-  color: white;
-  font-family: "Future";
-  font-size: 30px;
-  position:absolute;
-  width: fit-content;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-60%);
-}
 
-.Main_Content{
-  padding: 20px;
 
-}
-.Heading{
-  font-family: "Content";
 
-}
-.Content{
-  padding: 20px 20px;
-  font-family: "Content";
-  font-weight: 100;
-  border-left: 2px solid;
-  margin: 30px 0px;
-  border-bottom-left-radius: 50px;
-}
-.SlideShow .Main_Slide{
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px 10px grey;
-  border: 2px solid black;
-}
-.SlideShow .Main_Img{
-  border-radius: 15px;
-  width: 100%;
-}
-.SlideShow button{
-  width: 100px;
-  height:50px;
-  border-radius: 15px;
-  border: 0px;
-  background: lightcoral;
-  color: white;
-  font-size: 18px;
-  font-family: "Future";
-  flex: 1;
-  margin: 0px 10px;
-  outline: none;
-  z-index: 1;
-}
-.controls{
-  display: flex;
-  flex-direction:row;
-  padding: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.Quotes{
-  font-size: 20px;
-  margin: 30px 0px;
-  padding: 0px 30px;
-}
-.AD{
-  text-align: center;
-}
+
+
+
+
+
+
+
+
 .footer_15{
   height: 300px;
   background-image: url("../Images/Background_Top.jpg");
