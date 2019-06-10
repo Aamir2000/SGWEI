@@ -1,65 +1,37 @@
-let images = document.querySelectorAll(".middle_middle img");
-let right_btn = document.querySelectorAll(".middle_middle .btn_right")[0];
-let left_btn = document.querySelectorAll(".middle_middle .btn_left")[0];
-let current = 0;
+$(".mobile_bar").on("click",(e)=>{
+  $(".Menu").toggle("slow");
+});
 
-function reset() {
-    images.forEach(img => { 
-        img.style.display = "none";
-    });
+let Images =
+[
+"./Images/0.jpg",
+"./Images/1.jpg",
+"./Images/2.jpg",
+"./Images/3.jpg",
+"./Images/4.jpg",
+"./Images/5.jpg",
+"./Images/6.jpg",
+"./Images/7.jpg",
+"./Images/8.jpg",
+"./Images/9.jpg",
+"./Images/10.jpg",
+"./Images/11.jpg",
+"./Images/12.jpg"
+]
+let count = 0;
+function Next(){
+  count++;
+  $(".Main_Img").attr("src",Images[count]);
+  if(count == Images.length){
+      count = 0;
+  }
 }
-
-function Prev() {
-    reset();
-    if (images[current - 1].style.display === "none") {
-        images[current - 1].style.display = "block";
+function Prev(){
+    count--;
+    $(".Main_Img").attr("src",Images[count]);
+    if(count == 0){
+      count = Images.length;
     }
-    current--;
-    
 }
-function Next() {
-    reset();
-    if (images[current + 1].style.display === "none") {
-        images[current + 1].style.display = "block";
-    }
-    current++;
-}
-
-right_btn.addEventListener("click", () => {
-    if (current == images.length-1) {
-        current = -1;
-    }
-    console.log(current);
-    Next();
-});
-
-left_btn.addEventListener("click", () => {
-    if (current == 0) {
-        current = images.length;
-    }
-    console.log(current);
-    Prev();
-});
-
-setInterval(() => {
-    if (current == images.length-1) {
-        current = -1;
-    }
-    Next();
-}, 3000);
-
-
-
-
-
-$(".fa-bars").on("click", e => { 
-    $(".nav_15").toggleClass("Grow");
-    $(".fa-bars").toggleClass("Mobile_SC")
-});
-$(".list").on("click", e => { 
-    $(e.target).toggleClass("Zoom");
-
-    setTimeout(() => {
-        $(e.target).toggleClass("Zoom");
-    },4000);
-});
+$(".Next").on("click",Next);
+$(".Previous").on("click",Prev);
