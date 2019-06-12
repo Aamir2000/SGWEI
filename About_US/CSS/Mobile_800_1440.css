@@ -1,3 +1,6 @@
+img{
+  width:100%;
+}
 .nav_15 nav{
   height: 70px;
   display: grid;
@@ -52,6 +55,9 @@ body{
 .Navigational_Page_Links{
   background-color: lightcoral;
 }
+.Top_List{
+  min-height: 170px;
+}
 
 .Navigational_Page_Links li{
   color: white;
@@ -64,13 +70,17 @@ body{
   cursor: pointer;
 }
 .Navigational_Page_Links:hover li{
-  filter: blur(5px);
+  filter: blur(2px);
 }
 .Navigational_Page_Links li:hover{
   filter: blur(0px);
   transform: scale(1.2);
 }
-
+.History_Growth{
+  overflow-x: hidden;
+  min-width: fit-content;
+  display: none;
+}
 .Heading{
   color: grey;
   padding: 20px;
@@ -86,8 +96,11 @@ body{
   padding: 10px 20px;
   text-align: center;
 }
-img{
-  width: 100%;
+
+.Activities{
+  min-width: fit-content;
+  overflow-x: hidden;
+  display: none;
 }
 .Actv{
   display: grid;
@@ -96,14 +109,33 @@ img{
 }
 .Actv li{
   list-style: none;
-  padding: 10px;
+  padding: 10px 15px;
   text-align: center;
   color: grey;
   font-family: "Content";
 }
+.Title_Image{
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
-
-
+}
+.Projects , .Projects > *{
+  width: 100%;
+  min-width: fit-content;
+  overflow-x: hidden;
+}
+.Content .table{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0px;
+}
+.table .data,.head{
+  padding: 10px;
+  border: 1px solid grey;
+  grid-gap: 1fr;
+}
 
 
 
