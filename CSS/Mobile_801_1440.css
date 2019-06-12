@@ -45,7 +45,7 @@
 }
 .banner_top{
   background-image: url("../Images/Background_Top.jpg");
-  height: 450px;
+  height: 750px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,9 +62,9 @@
   font-family: "Potra";
   font-size: 100px;
   position:absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-30%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .overlay h4{
   text-align: center;
