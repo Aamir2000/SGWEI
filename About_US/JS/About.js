@@ -13,3 +13,9 @@ $(window).on("resize",(e)=>{
 $(".History_Button").on("click",(e)=>{
   $(".History_Growth").toggle("slow");
 });
+$(".Activities_Button").on("click",(e)=>{
+  $(".Activities").toggle("slow");
+});
+$(".Projects_Button").on("click",(e)=>{
+  $(".Projects").toggle("slow");
+});
